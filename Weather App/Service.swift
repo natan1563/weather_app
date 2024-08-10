@@ -15,7 +15,7 @@ struct CityInput {
 
 class Service {
     private let baseUrl: String = "https://api.openweathermap.org/data/2.5/forecast/daily"
-    private let apiKey: String = "67faab4bc8337003a1a3495cb1105848"
+    private let apiKey: String = "<MY-API-KEY>"
     private let session = URLSession.shared
     
     func fetchData(city: CityInput, _ completion: @escaping (WeatherResponse?) -> Void) {
